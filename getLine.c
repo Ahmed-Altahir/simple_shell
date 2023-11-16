@@ -5,7 +5,6 @@
  * @info: klewmd
  * @buf: adekwld d
  * @len: ewkld kweld
- *
  * Return: ek eklkdw 
  */
 ssize_t input_buf(info_t *info, char **buf, size_t *len)
@@ -15,7 +14,6 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 
 	if (!*len)
 	{
-		
 		free(*buf);
 		*buf = NULL;
 		signal(SIGINT, sigintHandler);
@@ -61,7 +59,7 @@ ssize_t get_input(info_t *info)
 	k = input_buf(info, &buf, &len);
 	if (k == -1) 
 		return (-1);
-	if (len)	
+	if (len)
 	{
 		j = i;
 		p = buf + i;
