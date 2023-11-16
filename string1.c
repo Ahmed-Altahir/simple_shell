@@ -6,7 +6,7 @@
  * @src: the source
  *
  * Return: pointer to destination
- */
+*/
 char *_strcpy(char *dest, char *src)
 {
 	int a = 0;
@@ -16,7 +16,7 @@ char *_strcpy(char *dest, char *src)
 	while (src[a])
 	{
 		dest[a] = src[a];
-		i++;
+		a++;
 	}
 	dest[a] = 0;
 	return (dest);
@@ -27,7 +27,7 @@ char *_strcpy(char *dest, char *src)
  * @str: the string to duplicate
  *
  * Return: pointer to the duplicated string
- */
+*/
 char *_strdup(const char *str)
 {
 	int le = 0;
@@ -50,7 +50,7 @@ char *_strdup(const char *str)
  *@str: the string to be printed
  *
  * Return: Nothing
- */
+*/
 void _puts(char *str)
 {
 	int m = 0;
@@ -70,7 +70,7 @@ void _puts(char *str)
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
- */
+*/
 int _putchar(char c)
 {
 	static int n;
